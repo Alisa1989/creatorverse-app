@@ -1,42 +1,129 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Sono:wght@800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
   text-align: center;
+  background-color: rgb(0, 6, 13);
+  width: '100vw';
+  min-height: 100vh;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  display: flex;
+  background-image: url('https://creatorverse-production.up.railway.app/static/media/banner.de5659898d3bfc5eb8ea.jpg');
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  height: 600px;
+  line-height: 85.76px;
+  justify-content: center;
+  align-items: bottom;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 2px solid rgb(66, 74, 89);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* .navlinks { */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* align-content: center; */
+  /* width: 50%; */
+/* } */
+
+.navlinks a{
+  background-color: rgba(81,133,180,255);
+  color: white;
+  padding: 15px 32px;
+  border-radius: 3px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  height: 3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px transparent solid;
+
 }
 
-.card {
-  padding: 2em;
+.navlinks a:hover {
+  border: 2px white solid;
+  text-decoration: none;
+  color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.divider {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+}
+
+div.navbar h1 {
+  font-weight: 800;
+  font-size: 8vw;
+  font-family: Sono;
+  color: white;
+  padding: 70px;
+}
+
+h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.show-creators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5%;
+}
+
+.card-container {
+  min-width: 580px;
+  height: 340px;
+  border: 2px solid rgb(66, 74, 89);
+  margin: 10px;
+  background-color: black;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-container h3 {
+  color: rgba(81,133,180,255);
+  font-size: 40px;
+  text-transform: uppercase;
+  /* display: flex; */
+  text-wrap: wrap;
+}
+
+.card{
+  width: 80%;
+  height: 80%;
+}
+
+.card-description {
+  display: flex;
+  justify-content: left;
 }
