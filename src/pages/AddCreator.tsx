@@ -2,6 +2,8 @@ import { useState } from "react";
 import { supabase } from "../client";
 import { useNavigate } from "react-router-dom";
 import { CreatorModel } from "../App";
+import { FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
+
 
 const AddCreator = ({refresh}) => {
     const navigate = useNavigate();
@@ -44,70 +46,122 @@ const AddCreator = ({refresh}) => {
     }
 
     return (
-        <div>
-            <h3>
-                AddCreator
-            </h3>
+        <div className="form">
             <form>
-                <label>
-                    Name
-                    <input
-                        type="name"
-                        name="name"
-                        onChange={onChange}
-                        value={inputs.name}
-                    />
-                </label>
-                <label>
-                    Image
-                    <input
-                        type="image_url"
-                        name="image_url"
-                        onChange={onChange}
-                        value={inputs.image_url}
-                    />
-                </label>
-                <label>
-                    Description
-                    <input
-                        type="description"
-                        name="description"
-                        onChange={onChange}
-                        value={inputs.description}
-                    />
-                </label>
-                <h3>Social Media Links</h3>
-                <label>
-                    youtube_url
-                    <input
-                        type="youtube_url"
-                        name="youtube_url"
-                        onChange={onChange}
-                        value={inputs.youtube_url}
-                    />
-                </label>
-                <label>
-                    twitter_url
-                    <input
-                        type="twitter_url"
-                        name="twitter_url"
-                        onChange={onChange}
-                        value={inputs.twitter_url}
-                    />
-                </label>
-                <label>
-                    instagram_url
-                    <input
-                        type="instagram_url"
-                        name="instagram_url"
-                        onChange={onChange}
-                        value={inputs.instagram_url}
-                    />
-                </label>
-                <button onClick={addCreator}>
+                <div>
+                    <label>
+                        <h4>
+                            Name
+                        </h4>
+                        <input
+                            type="text"
+                            name="name"
+                            onChange={onChange}
+                            value={inputs.name}
+                            />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <h4>
+                            Image
+                        </h4>
+                        <p>
+                        Provide a link to an image of your creator. Be sure to include the http://
+                        </p>
+                        <input
+                            type="text"
+                            name="image_url"
+                            onChange={onChange}
+                            value={inputs.image_url}
+                            />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <h4>
+                        Description
+                        </h4>
+                        <p>
+                        Provide a description of the creator. Who are they? What makes them interesting?
+                        </p>
+                        <input
+                            type="text"
+                            name="description"
+                            onChange={onChange}
+                            value={inputs.description}
+                            />
+                    </label>
+                </div>
+                <div className="social-media-links-header">
+                    <h3>Social Media Links</h3>
+                    <p>
+                    Provide at least one of the creator's social media links.
+                    </p>
+                </div>
+                <div>
+                    <label>
+                        <h4>
+                            <FaYoutube style={{color: "white"}}/>
+                            <span className="has-icon">
+                                YouTube
+                            </span>
+                        </h4>
+                        <p>
+                        The creator's YouTube handle (without the @)
+                        </p>
+                        <input
+                            type="text"
+                            name="youtube_url"
+                            onChange={onChange}
+                            value={inputs.youtube_url}
+                            />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <h4>
+                            <FaTwitter />
+                            <span className="has-icon">
+                                Twitter
+                            </span>
+                        </h4>
+                        <p>
+                        The creator's Twitter handle (without the @)
+                        </p>
+                        <input
+                            type="text"
+                            name="twitter_url"
+                            onChange={onChange}
+                            value={inputs.twitter_url}
+                            />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <h4>
+                            <FaInstagram />
+                            <span className="has-icon">
+                                Instagram
+                            </span>
+                        </h4>
+                        <p>
+                        The creator's Instagram handle (without the @)
+                        </p>
+                        <input
+                            type="text"
+                            name="instagram_url"
+                            onChange={onChange}
+                            value={inputs.instagram_url}
+                            />
+                    </label>
+                </div>
+            </form>
+            <div className="bottom-buttons-container">
+                <button className="bottom-buttons button-submit buttons-form" onClick={addCreator}>
                     Submit
                 </button>
-            </form>
+            </div>
         </div>
     );
 }

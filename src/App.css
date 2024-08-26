@@ -60,6 +60,8 @@
   border: 2px white solid;
   text-decoration: none;
   color: white;
+  background-color: rgba(67,115,157,255);
+
 }
 
 .divider {
@@ -125,7 +127,18 @@ h3 {
   justify-content: left;
 }
 
+.card-socialmedia-icons {
+  text-align: left;
+  padding-top: 8px;
+}
+
+.card-info-edit {
+  padding-top: 40px;
+  display: flex;
+}
+
 form {
+  padding: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,28 +155,98 @@ form div {
 input {
   text-decoration: none;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 8px;
+  height: 70px;
+  padding-left: 15px;
+  font-size: 19px;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid rgba(81,133,180,255);
 }
 
 .form h4 {
   text-align: left;
   display: block;
+  font-weight: normal;
+  font-size: 22px;
 }
 
 .form p {
   display: block;
-}
-.form {
-  overflow: hidden;
-  border: 3px yellow solid;
+  text-align: left;
+  font-style: italic;
+  font-size: 12px;
+  padding-bottom: 7px;
 }
 
-label span{
-  border: 3px red solid;
-  display: block;
+.form h3 {
+  text-align: left;
+  width: 770px;
+  font-size: 27px;
+}
+
+.has-icon {
+  padding-left: 15px;
 }
 
 label {
-  border: 3px green solid;
-  width: 500px;
+  /* border: 3px purple solid; */
+  width: 770px;
+  padding-bottom: 15px;
+}
+
+.bottom-buttons-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 100px 0px;
+  gap: 70px;
+}
+
+.bottom-buttons {
+    background-color: rgba(81,133,180,255);
+    color: white;
+    padding: 15px 32px;
+    border-radius: 3px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    height: 3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px transparent solid;
+}
+  
+.bottom-buttons:hover {
+    border: 2px white solid;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(67,115,157,255);
+}
+
+.buttons-form {
+  padding: 0 90px;
+}
+
+.delete {
+  background-color: rgba(255,96,92,255);
+}
+
+.delete:hover {
+  background-color: #ff3633;
+}
+
+.view-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5%;
+}
+
+img {
+  width: 300px;
+  height: auto;
 }
