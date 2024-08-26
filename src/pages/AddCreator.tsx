@@ -8,8 +8,10 @@ const AddCreator = ({refresh}) => {
 
     const [inputs, setInputs] = useState<CreatorModel>({ 
         name: "", 
-        url: "", 
         image_url: "", 
+        youtube_url: "",
+        twitter_url: "",
+        instagram_url: "",
         description: "" 
     })
 
@@ -33,8 +35,10 @@ const AddCreator = ({refresh}) => {
 
         setInputs({
             name: "", 
-            url: "", 
             image_url: "", 
+            youtube_url: "",
+            twitter_url: "",
+            instagram_url: "", 
             description: "" 
         })
     }
@@ -55,16 +59,16 @@ const AddCreator = ({refresh}) => {
                     />
                 </label>
                 <label>
-                    url
+                    Image
                     <input
-                        type="url"
-                        name="url"
+                        type="image_url"
+                        name="image_url"
                         onChange={onChange}
-                        value={inputs.url}
+                        value={inputs.image_url}
                     />
                 </label>
                 <label>
-                    description
+                    Description
                     <input
                         type="description"
                         name="description"
@@ -72,13 +76,32 @@ const AddCreator = ({refresh}) => {
                         value={inputs.description}
                     />
                 </label>
+                <h3>Social Media Links</h3>
                 <label>
-                    image_url
+                    youtube_url
                     <input
-                        type="image_url"
-                        name="image_url"
+                        type="youtube_url"
+                        name="youtube_url"
                         onChange={onChange}
-                        value={inputs.image_url}
+                        value={inputs.youtube_url}
+                    />
+                </label>
+                <label>
+                    twitter_url
+                    <input
+                        type="twitter_url"
+                        name="twitter_url"
+                        onChange={onChange}
+                        value={inputs.twitter_url}
+                    />
+                </label>
+                <label>
+                    instagram_url
+                    <input
+                        type="instagram_url"
+                        name="instagram_url"
+                        onChange={onChange}
+                        value={inputs.instagram_url}
                     />
                 </label>
                 <button onClick={addCreator}>

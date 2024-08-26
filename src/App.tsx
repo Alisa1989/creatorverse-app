@@ -12,9 +12,11 @@ import { useEffect, useState } from "react";
 
 export type CreatorModel = {
   name: string,
-  url: string,
-  description: string,
   image_url: string,
+  description: string,
+  youtube_url?: string,
+  twitter_url?: string,
+  instagram_url?: string,
   id?: string
 }
 

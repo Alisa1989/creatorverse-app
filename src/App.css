@@ -80,6 +80,10 @@ h3 {
   font-family: Poppins;
   font-weight: 700;
   margin-bottom: 18px;
+  color: rgba(81,133,180,255);
+  font-size: 40px;
+  text-transform: uppercase;
+  text-wrap: wrap;
 }
 
 .show-creators {
@@ -110,13 +114,6 @@ h3 {
   justify-content: space-between;
 }
 
-.card-container h3 {
-  color: rgba(81,133,180,255);
-  font-size: 40px;
-  text-transform: uppercase;
-  /* display: flex; */
-  text-wrap: wrap;
-}
 
 .card{
   width: 80%;
@@ -126,4 +123,47 @@ h3 {
 .card-description {
   display: flex;
   justify-content: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  text-decoration: none;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.form h4 {
+  text-align: left;
+  display: block;
+}
+
+.form p {
+  display: block;
+}
+.form {
+  overflow: hidden;
+  border: 3px yellow solid;
+}
+
+label span{
+  border: 3px red solid;
+  display: block;
+}
+
+label {
+  border: 3px green solid;
+  width: 500px;
 }
