@@ -38,7 +38,6 @@ const ViewCreator = ({creators, refresh}) => {
                     edit
                 </Link>
                 <button className="bottom-buttons button-submit delete" onClick={()=> {
-                console.log("called delete", id!)
                 deleteCreator(parseInt(id!));
                 refresh();
                 navigate(`/`);

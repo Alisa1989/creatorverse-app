@@ -37,7 +37,6 @@ function App() {
         .from('creators')
         .select()
         setCreators(data);
-        console.log(data![0], error, typeof(data));
     }
 
   return (

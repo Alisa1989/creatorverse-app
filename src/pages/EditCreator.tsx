@@ -31,7 +31,6 @@ const EditCreator = ({creators, refresh}) => {
     }
 
     const modifyCreator = async(e) => {
-        console.log("called edit")
         e.preventDefault();
         const { error } = await supabase
         .from('creators')
@@ -159,7 +158,6 @@ const EditCreator = ({creators, refresh}) => {
                     Submit
                 </button>
                 <button className="bottom-buttons button-submit buttons-form delete" onClick={()=> {
-                    console.log("called delete", id!)
                     deleteCreator(parseInt(id!));
                     refresh();
                     navigate(`/`);

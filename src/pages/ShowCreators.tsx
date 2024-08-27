@@ -6,7 +6,6 @@ const ShowCreators = ({creators}) => {
     return (
         <div className="show-creators">
                 {creators!.map((creator: CreatorModel) => {
-                    // console.log("creator", creator)
                     return (
                     <Card
                         creator={creator}
