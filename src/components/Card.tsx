@@ -22,9 +22,21 @@ export const Card = (props: CardProps) => {
                             {creator!.name}
                         </h3>
                         <div className="card-socialmedia-icons">
-                            {creator.youtube_url ? <FaYoutube style={{color:'white', fontSize: '40px'}}/> : null}
-                            {creator.twitter_url ? <FaTwitter style={{color:'white', fontSize: '40px'}}/> : null}
-                            {creator.instagram_url ? <FaInstagram style={{color:'white', fontSize: '40px'}}/> : null}
+                            {creator.youtube_url ? 
+                            <a href={`https://www.youtube.com/${creator.youtube_url}`}>
+                            <FaYoutube style={{color:'white', fontSize: '40px'}}/>
+                            </a>
+                             : null}
+                            {creator.twitter_url ? 
+                             <a href={`https://www.x.com/${creator.twitter_url}`}>
+                            <FaTwitter style={{color:'white', fontSize: '40px'}}/>
+                            </a>
+                             : null}
+                            {creator.instagram_url ? 
+                            <a href={`https://www.instagram.com/${creator.instagram_url}`}>
+                            <FaInstagram style={{color:'white', fontSize: '40px'}}/>
+                            </a>
+                             : null}
                         </div>
                     </div>
                     <div className="card-info-edit">

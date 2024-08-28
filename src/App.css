@@ -247,6 +247,42 @@ label {
 }
 
 img {
-  width: 300px;
+  width: 400px;
   height: auto;
+}
+
+.view-card a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 0px;
+  gap: 20px;
+  transition: padding-left 250ms;
+}
+
+.view-card a:hover {
+  background-color: rgba(67,115,157,255);
+  border: 2px white solid;
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  border-radius: 3px;
+  /* transform: scale(1, 0) */
+}
+
+.view-top {
+  margin: auto;
+  width: 80%;
+}
+
+.view-title-icons {
+  width: 50%;
+  height: auto;
+}
+
+.view-top {
+  gap: 100px;
 }

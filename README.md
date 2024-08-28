@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='./src/creatorverse.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+👉🏿<img src='./src/assets/creatorverse.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  👉🏿 [LiceCap](https://en.softonic.com/download/licecap/windows/post-download?ex=RAMP-2081.4)

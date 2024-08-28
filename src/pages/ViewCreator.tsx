@@ -26,10 +26,25 @@ const ViewCreator = ({creators, refresh}) => {
                     <p>
                         {selected!.description}
                     </p>
-                    <div className="card-socialmedia-icons">
-                        {selected.youtube_url ? <FaYoutube style={{color:'white', fontSize: '40px'}}/> : null}
-                        {selected.twitter_url ? <FaTwitter style={{color:'white', fontSize: '40px'}}/> : null}
-                        {selected.instagram_url ? <FaInstagram style={{color:'white', fontSize: '40px'}}/> : null}
+                    <div className="card-socialmedia-icons view-card">
+                        {selected.youtube_url ? 
+                        <a href={`https://www.youtube.com/${selected.youtube_url}`}>
+                        <FaYoutube style={{color:'white', fontSize: '40px'}}/>
+                        @{selected.youtube_url}
+                        </a>
+                            : null}
+                        {selected.twitter_url ? 
+                            <a href={`https://www.x.com/${selected.twitter_url}`}>
+                        <FaTwitter style={{color:'white', fontSize: '40px'}}/>
+                        @{selected.twitter_url}
+                        </a>
+                            : null}
+                        {selected.instagram_url ? 
+                        <a href={`https://www.instagram.com/${selected.instagram_url}`}>
+                        <FaInstagram style={{color:'white', fontSize: '40px'}}/>
+                        @{selected.instagram_url}
+                        </a>
+                            : null}
                     </div>
                 </div>
             </div>
